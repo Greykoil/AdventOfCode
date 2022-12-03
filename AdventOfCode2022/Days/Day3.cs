@@ -9,9 +9,40 @@ namespace AdventOfCode2022.Days
             
             Console.WriteLine($"Start running {GetType()}");
 
-            IEnumerable<string> data = DataReader.ReadData(this, config);
+            List<string> data = DataReader.ReadData(this, config).ToList();
 
-            return 0;
+            long prioritySum  = 0;
+
+
+            for (int i = 0; i < data.Count(); i += 3)
+            {
+
+                foreach (var letter in data[i])                
+                {
+                    if (data[i +1].Contains(letter) && data[i + 2].Contains(letter))
+                    {
+                        prioritySum += ConvertLetter(letter);
+                        break;
+                    }
+                }
+            }
+
+            return prioritySum;
+        }
+
+        private long ConvertLetter(char letter)
+        {
+            int value = 0;
+            if (Char.IsUpper(letter))
+            {
+                value = letter - 64 + 26;
+            } 
+            else
+            {
+                value = letter - 96;
+            }
+
+            return value;
         }
     }
 }
