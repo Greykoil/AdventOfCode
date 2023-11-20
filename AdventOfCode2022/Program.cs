@@ -1,5 +1,5 @@
-﻿using AdventOfCode2022.Days;
-using AdventOfCode2022.Helper;
+﻿using AdventOfCode.Days;
+using AdventOfCode.Helper;
 
 RunConfig config = ConfigReader.ReadConfig();
 

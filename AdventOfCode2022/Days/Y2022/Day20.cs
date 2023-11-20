@@ -1,8 +1,8 @@
-﻿using AdventOfCode2022.Helper;
+﻿using AdventOfCode.Helper;
 
-namespace AdventOfCode2022.Days
+namespace AdventOfCode.Days.Y2022
 {
-    class Day16 : IDay
+    class Day20 : IDay
     {
         public long Run(RunConfig config)
         {

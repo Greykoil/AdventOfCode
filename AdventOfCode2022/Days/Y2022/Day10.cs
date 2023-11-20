@@ -1,6 +1,6 @@
-﻿using AdventOfCode2022.Helper;
+﻿using AdventOfCode.Helper;
 
-namespace AdventOfCode2022.Days
+namespace AdventOfCode.Days.Y2022
 {
     class Day10 : IDay
     {

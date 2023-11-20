@@ -1,6 +1,6 @@
-﻿using AdventOfCode2022.Helper;
+﻿using AdventOfCode.Helper;
 
-namespace AdventOfCode2022.Days
+namespace AdventOfCode.Days
 {
     internal class DayFactory
     {
@@ -9,7 +9,7 @@ namespace AdventOfCode2022.Days
         {
             Console.WriteLine($"Generating day for {config.Day} - Using {(config.UseSimpleData ? "Simple" : "Full")} data.");
 
-            string dayName = "AdventOfCode2022.Days.Day" + config.Day;
+            string dayName = $"AdventOfCode.Days.Y{config.Year}.Day{config.Day}";
 
             Type? type = Type.GetType(dayName);
             if (type == null)

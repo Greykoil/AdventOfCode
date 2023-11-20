@@ -1,7 +1,7 @@
-﻿using AdventOfCode2022.Helper;
+﻿using AdventOfCode.Helper;
 using System.Numerics;
 
-namespace AdventOfCode2022.Days
+namespace AdventOfCode.Days.Y2022
 {
     enum OperationType
     {

@@ -1,20 +1,15 @@
-﻿using AdventOfCode2022.Days;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AdventOfCode.Days;
 
-namespace AdventOfCode2022.Helper
+namespace AdventOfCode.Helper
 {
     internal class DataReader
     {
         internal static IEnumerable<string> ReadData(IDay day, RunConfig config)
         {
             string fileName = day.GetType().Name + "Input.txt";
-            string folderName = config.UseSimpleData ? "SimpleData" : "Data";
+            string folderName = config.UseSimpleData ? "SampleData" : "RealData";
 
-            string fullName = "./" + folderName + "/" + fileName;
+            string fullName = $"./Data/{config.Year}/" + folderName + "/" + fileName;
 
             if (!File.Exists(fullName))
             {
