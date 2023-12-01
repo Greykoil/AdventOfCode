@@ -165,12 +165,16 @@
     <None Update="Data\2022\SampleData\Day9Input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="Data\2023\RealData\Day1Input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\2023\SampleData\Day1Input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Data\2023\SampleData\" />
     <Folder Include="Data\2023\RealData\" />
-    <Folder Include="Days\Y2023\" />
   </ItemGroup>
 
 </Project>
